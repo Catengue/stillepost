@@ -47,3 +47,14 @@ The initial proof-of-concept used to check if this idea could really work...
 To embed stillepost into your own project:
 1. Copy the files in the `include/` directory into your codebase.
 2. Use `main.c` as a reference implementation for initialization, request invocation, and cleanup.
+
+## Limitations of the Technique
+This technique only works when the target web-server allows for [CORS](https://developer.mozilla.org/de/docs/Web/HTTP/Guides/CORS) requests from arbitrary origins. So make sure when using stillepost that your redirector has CORS configured to allow exactly that. While testing the technique, I used a python webserver that explicitly set the following headers:
+
+```
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Headers: *
+```
+
+This is also the reason, why you won't necessarily be able to send arbitrary requests to other web pages in the context of the user. If the target pages don't allow CORS requests, the browser will drop/block the request attempt.
